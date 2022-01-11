@@ -1,11 +1,9 @@
-// ✅✅check the browser console
-// console.log("hello word");
+// statement:
+const demo = document.getElementById("demo"); //this is a statement;
 
-// ✅✅all documents are converts to "hello world"
-// document.write("hello word");
+let a, b, c;
+a = 5;
+b = 6;
+c = a + b;
 
-// ✅✅print the whole document
-// window.print();
-
-// ✅✅alert something
-// alert("hello world");
+demo.innerHTML = c;
