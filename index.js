@@ -1,4 +1,8 @@
-const h1 = document.querySelector('h1');
+const carName = {
+  name: 'valvo',
+  color: 'red',
+  size: '22',
+  price: '1990$',
+};
 
-const val = 'practice javascript fundamental and problem solving';
-h1.innerText = val;
+console.log(carName.name)
