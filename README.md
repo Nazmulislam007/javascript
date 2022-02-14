@@ -1,4 +1,3 @@
-# javascript
-learning javascript from w3school..
-pure javascript , core javascript, vanila javascript
-HTMLTemplateElement.content web api
+# Search filter
+using HTMLTemplateElement.content web-api..
+Data collected from JSON placeholder
