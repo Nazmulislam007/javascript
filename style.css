@@ -1,0 +1,40 @@
+h2,
+p,
+label {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.search-wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 31.25em;
+  font-size: 10px;
+}
+
+label {
+  font-size: 2.3em;
+  margin-bottom: 0.2em;
+}
+
+input {
+  font-size: 2em;
+  margin-bottom: 0.4rem;
+}
+
+.user-search {
+  font-size: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25em, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  font-size: 1.4em;
+  border: 1px solid black;
+  padding: 0.7em 0.6em;
+}
+
+.hide {
+  display: none;
+}
