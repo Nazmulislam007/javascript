@@ -1,4 +1,5 @@
 const today = new Date();
+// checking date
 
 const day = today.getDay();
 
