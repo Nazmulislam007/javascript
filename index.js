@@ -1,14 +1,19 @@
-const element = document.getElementById("target");
-const textNode = element.childNodes[0];
-let text = textNode.data;
+const leapYear = (year) => {
+  if ((year % 100 === 0 && year % 4 === 0) || year % 400 === 0) {
+    return console.log(`this ${year} is leap year`);
+  } else {
+    return console.log(`this ${year} is not leap year`);
+  }
+};
 
-// console.log(text[text.length - 1] + text.substring(0, text.length - 1));
+leapYear(1400);
 
-window.addEventListener("load", () => {
-  setInterval(() => {
-    text = text[text.length - 1] + text.substring(0, text.length - 1);
-    // console.log(text);
-    textNode.data = text;
-  }, 100);
-});
+const leapYear2 = (year) => {
+  return year % 100 === 0 ? year % 400 === 0 : year % 4 === 0;
+};
 
+console.log(leapYear2(2010));
+console.log(leapYear2(2011));
+console.log(leapYear2(2012));
+console.log(leapYear2(2013));
+console.log(leapYear2(2048));
