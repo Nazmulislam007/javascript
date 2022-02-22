@@ -37,8 +37,8 @@ leapYears(2015);
 for (let year = 2014; year <= 2050; year++) {
   const time = new Date(year, 0, 1);
   if (time.getDay() === 0) {
-    console.log(`first january is being sunday ${year}`);
+    //console.log(`first january is being sunday ${year}`);
   } else {
-    console.log("false");
+    //console.log("false");
   }
 }
