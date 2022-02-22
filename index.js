@@ -39,6 +39,6 @@ for (let year = 2014; year <= 2050; year++) {
   if (time.getDay() === 0) {
     //console.log(`first january is being sunday ${year}`);
   } else {
-    //console.log("false");
+    //console.log("false"); 
   }
 }
