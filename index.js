@@ -43,14 +43,28 @@
 //   }
 // }
 
-//todo problem:8. Write a JavaScript program where the program takes a random integer between 1 to 10, the user is then prompted to input a guess number. If the user input matches with guess number, the program will display a message "Good Work" otherwise display a message "Not matched"
+//todo problem: 8. Write a JavaScript program where the program takes a random integer between 1 to 10, the user is then prompted to input a guess number. If the user input matches with guess number, the program will display a message "Good Work" otherwise display a message "Not matched"
 
-const num = Math.ceil(Math.random() * 10);
+// const num = Math.ceil(Math.random() * 10);
 
-const gnum = prompt("Guess the number between 1 to 10");
+// const gnum = prompt("Guess the number between 1 to 10");
 
-if (gnum == num) {
-  alert("Great job");
-} else {
-  alert("Oops the number is " + num + "");
+// if (gnum == num) {
+//   alert("Great job");
+// } else {
+//   alert("Oops the number is " + num + "");
+// }
+
+// todo problem: 9. Write a JavaScript program to calculate number of days left until next Ramadan.
+
+const time = new Date();
+let ramadan = new Date(time.getFullYear(), 3, 4);
+
+if (time.getMonth() > 3) {
+  ramadan.setFullYear(ramadan.getFullYear() + 1);
 }
+
+const one_day = 1000 * 60 * 60 * 24;
+const daysLeft = Math.ceil((ramadan.getTime() - time.getTime()) / one_day);
+
+console.log("number of days left " + daysLeft);
