@@ -57,14 +57,34 @@
 
 // todo problem: 9. Write a JavaScript program to calculate number of days left until next Ramadan.
 
-const time = new Date();
-let ramadan = new Date(time.getFullYear(), 3, 4);
+// const time = new Date();
+// let ramadan = new Date(time.getFullYear(), 3, 4);
 
-if (time.getMonth() > 3) {
-  ramadan.setFullYear(ramadan.getFullYear() + 1);
-}
+// if (time.getMonth() > 3) {
+//   ramadan.setFullYear(ramadan.getFullYear() + 1);
+// }
 
-const one_day = 1000 * 60 * 60 * 24;
-const daysLeft = Math.ceil((ramadan.getTime() - time.getTime()) / one_day);
+// const one_day = 1000 * 60 * 60 * 24;
+// const daysLeft = Math.ceil((ramadan.getTime() - time.getTime()) / one_day);
 
-console.log("number of days left " + daysLeft);
+// console.log("number of days left " + daysLeft);
+
+// todo problem: 10; Calculate multiplication and division of two numbers
+// check the index.html file
+
+const firstNum = document.querySelector(".firstNum");
+const secondNum = document.querySelector(".secondNum");
+const multiply = document.querySelector(".multiply");
+const divided = document.querySelector(".divided");
+
+multiply.addEventListener("click", (e) => {
+  const firstNumVal = firstNum.value;
+  const secondNumVal = secondNum.value;
+  console.log(firstNumVal * secondNumVal);
+});
+
+divided.addEventListener("click", (e) => {
+  const firstNumVal = firstNum.value;
+  const secondNumVal = secondNum.value;
+  console.log(firstNumVal / secondNumVal);
+});
