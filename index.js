@@ -112,8 +112,16 @@
 
 // todo problem: 13; Create a variable using a user-defined name
 
-const user_defined = "abcd";
-const n = 120;
+// const user_defined = "abcd";
+// const n = 120;
 
-this[user_defined] = n;
-console.log(this[user_defined]);
+// this[user_defined] = n;
+// console.log(this[user_defined]);
+
+// todo problem: 14; Get the extension of a filename;
+
+const filename = "hello.html";
+const file = "abc.php";
+
+console.log(filename.split(".").pop());
+console.log(file.split(".").pop());
