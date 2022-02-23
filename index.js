@@ -94,14 +94,18 @@
 // rule 1 : C = (5 * (F - 32)) / 9;
 // rule 2 : F = (9C + (32 * 5)) / 5;
 
-const celcius = (cel) => {
-  F = (9 * cel + 32 * 5) / 5;
-  console.log(F);
-};
-celcius(20);
+// const celcius = (cel) => {
+//   F = (9 * cel + 32 * 5) / 5;
+//   console.log(F);
+// };
+// celcius(20);
 
-const fahren = (fah) => {
-  C = (5 * (fah - 32)) / 9;
-  console.log(C);
-};
-fahren(68);
+// const fahren = (fah) => {
+//   C = (5 * (fah - 32)) / 9;
+//   console.log(C);
+// };
+// fahren(68);
+
+// todo problem: 12;  Get the website URL (loading page)
+
+alert(document.URL);
