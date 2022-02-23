@@ -108,4 +108,12 @@
 
 // todo problem: 12;  Get the website URL (loading page)
 
-alert(document.URL);
+// alert(document.URL);
+
+// todo problem: 13; Create a variable using a user-defined name
+
+const user_defined = "abcd";
+const n = 120;
+
+this[user_defined] = n;
+console.log(this[user_defined]);
