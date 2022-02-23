@@ -72,19 +72,36 @@
 // todo problem: 10; Calculate multiplication and division of two numbers
 // check the index.html file
 
-const firstNum = document.querySelector(".firstNum");
-const secondNum = document.querySelector(".secondNum");
-const multiply = document.querySelector(".multiply");
-const divided = document.querySelector(".divided");
+// const firstNum = document.querySelector(".firstNum");
+// const secondNum = document.querySelector(".secondNum");
+// const multiply = document.querySelector(".multiply");
+// const divided = document.querySelector(".divided");
 
-multiply.addEventListener("click", (e) => {
-  const firstNumVal = firstNum.value;
-  const secondNumVal = secondNum.value;
-  console.log(firstNumVal * secondNumVal);
-});
+// multiply.addEventListener("click", (e) => {
+//   const firstNumVal = firstNum.value;
+//   const secondNumVal = secondNum.value;
+//   console.log(firstNumVal * secondNumVal);
+// });
 
-divided.addEventListener("click", (e) => {
-  const firstNumVal = firstNum.value;
-  const secondNumVal = secondNum.value;
-  console.log(firstNumVal / secondNumVal);
-});
+// divided.addEventListener("click", (e) => {
+//   const firstNumVal = firstNum.value;
+//   const secondNumVal = secondNum.value;
+//   console.log(firstNumVal / secondNumVal);
+// });
+
+// todo problem: 11; Convert temperatures to and from celsius, fahrenheit
+
+// rule 1 : C = (5 * (F - 32)) / 9;
+// rule 2 : F = (9C + (32 * 5)) / 5;
+
+const celcius = (cel) => {
+  F = (9 * cel + 32 * 5) / 5;
+  console.log(F);
+};
+celcius(20);
+
+const fahren = (fah) => {
+  C = (5 * (fah - 32)) / 9;
+  console.log(C);
+};
+fahren(68);
