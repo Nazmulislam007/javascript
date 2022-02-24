@@ -120,8 +120,40 @@
 
 // todo problem: 14; Get the extension of a filename;
 
-const filename = "hello.html";
-const file = "abc.php";
+// const filename = "hello.html";
+// const file = "abc.php";
 
-console.log(filename.split(".").pop());
-console.log(file.split(".").pop());
+// console.log(filename.split(".").pop());
+// console.log(file.split(".").pop());
+
+// todo interview question: 1; https://www.youtube.com/watch?v=twusETr-r9Y about setTimeout and setInterval which is event loop concept based.
+
+// let a = true;
+// let c = 0;
+
+// setTimeout(() => {
+//   a = false;
+// }, 2000);
+
+//// ? it stop after 2000 second but code don't free yet
+// setInterval(() => {
+//   if (a) {
+//     console.log(c++);
+//   }
+// }, 200);
+
+//// ? it's get printed for unlimited time..
+// while (a) {
+//   console.log(c++);
+// }
+
+let a = true;
+let c = 0;
+
+const id = setInterval(() => {
+  console.log(c++);
+}, 200);
+
+setTimeout(() => {
+  clearInterval(id);
+}, 2000);
