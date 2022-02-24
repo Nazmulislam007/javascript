@@ -147,13 +147,51 @@
 //   console.log(c++);
 // }
 
-let a = true;
-let c = 0;
+// let a = true;
+// let c = 0;
 
-const id = setInterval(() => {
-  console.log(c++);
-}, 200);
+// const id = setInterval(() => {
+//   console.log(c++);
+// }, 200);
 
-setTimeout(() => {
-  clearInterval(id);
-}, 2000);
+// setTimeout(() => {
+//   clearInterval(id);
+// }, 2000);
+
+// todo interview question: 2; https://www.youtube.com/watch?v=eBTBG4nda2A . closures setTimeout..
+
+// ? output 6 6 6 6 6 6; var store data. var is a global scope
+// function y() {
+//   for (var j = 0; j <= 5; j++) {
+//     setTimeout(() => {
+//       console.log(j);
+//     }, j * 1000);
+//   }
+// }
+// y();
+
+//? output 0 1 2 3 4 5; let print a copy after execute once of loop because of block scope
+// function x() {
+//   for (let i = 0; i <= 5; i++) {
+//     setTimeout(() => {
+//       console.log(i);
+//     }, i * 1000);
+//   }
+// }
+// x();
+
+// ?with closures -- and var
+
+function x() {
+  for (var i = 1; i <= 5; i++) {
+    function closures(x) {
+      setTimeout(() => {
+        console.log(x);
+      }, x * 1000);
+    }
+    closures(i);
+  }
+  console.log("async");
+}
+
+x();
