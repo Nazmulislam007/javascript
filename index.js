@@ -182,16 +182,87 @@
 
 // ?with closures -- and var
 
-function x() {
-  for (var i = 1; i <= 5; i++) {
-    function closures(x) {
-      setTimeout(() => {
-        console.log(x);
-      }, x * 1000);
-    }
-    closures(i);
-  }
-  console.log("async");
-}
+// function x() {
+//   for (var i = 1; i <= 5; i++) {
+//     function closures(x) {
+//       setTimeout(() => {
+//         console.log(x);
+//       }, x * 1000);
+//     }
+//     closures(i);
+//   }
+//   console.log("async");
+// }
 
-x();
+// x();
+
+// todo challenge 1: Reverse a string on multiple ways https://www.youtube.com/watch?v=M2bJBuaOeOQ&list=PLG0Y8SnptZgWTwxJEfu7jmSIZNCMWEuS6&index=5&t=962s
+
+function reverseString(str) {
+  return str.split("").reverse().join("");
+}
+console.log(reverseString("hello"));
+
+// -------------------------------------
+
+function reverseString(str) {
+  let revStr = "";
+  for (let i = str.length - 1; i >= 0; i--) {
+    revStr = revStr + str[i];
+  }
+  return revStr;
+}
+console.log(reverseString("hello"));
+
+// -------------------------------------
+
+function reverseString(str) {
+  let revStr = "";
+  for (let i = 0; i <= str.length - 1; i++) {
+    revStr = str[i] + revStr;
+  }
+  return revStr;
+}
+console.log(reverseString("hello"));
+
+// -------------------------------------
+
+function reverseString(str) {
+  let revStr = "";
+  for (let char of str) {
+    revStr = char + revStr;
+  }
+  return revStr;
+}
+console.log(reverseString("hello"));
+
+// -------------------------------------
+
+function reverseString(str) {
+  let revStr = "";
+  for (let char in str) {
+    revStr = str[char] + revStr;
+  }
+  return revStr;
+}
+console.log(reverseString("hello"));
+
+// -------------------------------------
+
+function reverseString(str) {
+  let revStr = "";
+  str.split("").forEach((char) => {
+    revStr = char + revStr;
+  });
+  return revStr;
+}
+console.log(reverseString("hello"));
+
+// -------------------------------------
+
+function reverseString(str) {
+  return str.split("").reduce((revStr, char) => {
+    return char + revStr;
+  }, "");
+}
+console.log(reverseString("hello"));
